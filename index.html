@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secret Stem — Fresh Lovely Flowers, Nairobi</title>
+  <meta name="description" content="Secret Stem is a Nairobi florist and event stylist. Hand bouquets, basket arrangements, box bouquets, fruit baskets and event flowers — order on WhatsApp.">
+  <meta name="theme-color" content="#2a1420">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- paper grain -->
+  <svg class="grain" aria-hidden="true"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .5 0"/></filter><rect width="100%" height="100%" filter="url(#noise)"/></svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="topbar" id="top">
+    <a href="#top" class="brand" aria-label="Secret Stem home">
+      <span class="brand__seal">S</span>
+      <span class="brand__word">Secret<em>Stem</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#collection">Collection</a>
+      <a href="#card">Write a card</a>
+      <a href="#events">Events</a>
+      <a href="#care">Care</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <span class="status" data-status><i></i><b>Checking hours…</b></span>
+      <button class="bag-btn" data-open-bag aria-label="Open your bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="bag-btn__count" data-bag-count>0</span>
+      </button>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav" data-menu>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="mono">Nairobi · Florist &amp; Event Stylist</span></p>
+        <h1 class="hero__title">
+          <span class="line">Every stem</span>
+          <span class="line">keeps a <em>secret</em></span>
+          <span class="line line--small">— we just help you tell it.</span>
+        </h1>
+        <p class="hero__lede">Fresh, lovely flowers wrapped by hand in the heart of Nairobi. Bouquets for the people you love, baskets that last up to three weeks, and full floral styling for weddings, tributes and celebrations.</p>
+        <div class="hero__cta">
+          <a href="#collection" class="btn btn--ink">Browse the collection</a>
+          <a href="https://wa.me/254769367747?text=Hello%20Secret%20Stem%20%F0%9F%8C%B9%20I%27d%20like%20to%20order%20flowers." class="btn btn--ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.5c0 4 3 7 7 7l1.2-1.6-2-1-1 .8a5 5 0 0 1-2.4-2.4l.8-1-1-2-1.6 1.2Z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+        <dl class="hero__facts">
+          <div><dt>From</dt><dd>KES 2,000</dd></div>
+          <div><dt>Vase life</dt><dd>up to 21 days</dd></div>
+          <div><dt>Every order</dt><dd>hand-tied</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__art">
+        <div class="arch arch--hero">
+          <img class="hero__photo" src="images/hero.jpg" alt="A large bouquet of red roses and gypsophila wrapped by Secret Stem" fetchpriority="high">
+        </div>
+
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 200 200" class="seal__ring">
+            <defs><path id="circ" d="M100 100 m -78 0 a 78 78 0 1 1 156 0 a 78 78 0 1 1 -156 0"/></defs>
+            <text><textPath href="#circ">fresh · lovely · flowers · nairobi · stemsecret254 · </textPath></text>
+          </svg>
+          <span class="seal__wax">✿</span>
+        </div>
+
+        <figure class="note note--hero">
+          <span class="note__pin"></span>
+          <p>"Red &amp; white roses, a little gypsophila, red berries — <b>for her.</b>"</p>
+          <figcaption class="mono">Hand bouquet</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Birthdays</span><i>✿</i><span>Anniversaries</span><i>✿</i><span>Weddings</span><i>✿</i><span>Get well soon</span><i>✿</i><span>Sympathy &amp; tributes</span><i>✿</i><span>Just because</span><i>✿</i><span>Office desks</span><i>✿</i><span>Christmas</span><i>✿</i><span>Valentine's</span><i>✿</i>
+        <span>Birthdays</span><i>✿</i><span>Anniversaries</span><i>✿</i><span>Weddings</span><i>✿</i><span>Get well soon</span><i>✿</i><span>Sympathy &amp; tributes</span><i>✿</i><span>Just because</span><i>✿</i><span>Office desks</span><i>✿</i><span>Christmas</span><i>✿</i><span>Valentine's</span><i>✿</i>
+      </div>
+    </div>
+
+    <!-- ============ COLLECTION ============ -->
+    <section class="section collection" id="collection">
+      <header class="chapter">
+        <div>
+          <h2 class="chapter__title">The <em>Collection</em></h2>
+          <p class="chapter__sub">Twelve arrangements we wrap every day. Prices already include our current offer, so you save on almost every one.</p>
+        </div>
+      </header>
+
+      <div class="filters" role="tablist" aria-label="Filter arrangements">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="hand" role="tab" aria-selected="false">Hand bouquets</button>
+        <button class="chip" data-filter="basket" role="tab" aria-selected="false">Baskets</button>
+        <button class="chip" data-filter="gift" role="tab" aria-selected="false">Boxes &amp; vases</button>
+        <button class="chip" data-filter="season" role="tab" aria-selected="false">Seasonal</button>
+      </div>
+
+      <div class="grid" data-grid></div>
+
+      <aside class="custom">
+        <p class="custom__hand">Don't see it here?</p>
+        <p>Send us a photo, a colour or a budget and we'll make it for you. Custom bouquets and the full <b>Blooming Blossoms</b> range are available on request.</p>
+        <a class="btn btn--rose" target="_blank" rel="noopener" href="https://wa.me/254769367747?text=Hello%20Secret%20Stem%2C%20I%27d%20like%20a%20custom%20arrangement.">Ask for a custom piece</a>
+      </aside>
+    </section>
+
+    <!-- ============ CARD COMPOSER ============ -->
+    <section class="section composer" id="card">
+      <header class="chapter chapter--light">
+        <div>
+          <h2 class="chapter__title">Say it on <em>paper</em></h2>
+          <p class="chapter__sub">Write the note that goes with your flowers. We copy it by hand onto the card, and it's sent along with your order.</p>
+        </div>
+      </header>
+
+      <div class="composer__body">
+        <form class="composer__form" data-composer>
+          <label class="field">
+            <span class="mono">To</span>
+            <input type="text" name="to" maxlength="40" placeholder="Wanjiru" autocomplete="off">
+          </label>
+          <label class="field">
+            <span class="mono">Your message</span>
+            <textarea name="msg" rows="4" maxlength="180" placeholder="Happy birthday, my love. Here's to another year of you."></textarea>
+            <small class="mono"><span data-chars>0</span>/180</small>
+          </label>
+          <label class="field">
+            <span class="mono">From</span>
+            <input type="text" name="from" maxlength="40" placeholder="Brian" autocomplete="off">
+          </label>
+
+          <fieldset class="field">
+            <legend class="mono">Card paper</legend>
+            <div class="swatches">
+              <label><input type="radio" name="paper" value="blush" checked><span style="--sw:#f2c9c4"></span>Blush</label>
+              <label><input type="radio" name="paper" value="cream"><span style="--sw:#fbf4ea"></span>Cream</label>
+              <label><input type="radio" name="paper" value="sage"><span style="--sw:#c9d3b8"></span>Sage</label>
+              <label><input type="radio" name="paper" value="ink"><span style="--sw:#2a1420"></span>Midnight</label>
+            </div>
+          </fieldset>
+
+          <div class="composer__prompts">
+            <span class="mono">Need words?</span>
+            <button type="button" class="chip chip--sm" data-prompt="Happy birthday! May your year bloom as beautifully as you do.">Birthday</button>
+            <button type="button" class="chip chip--sm" data-prompt="Thinking of you and holding you close in these difficult days. With deepest sympathy.">Sympathy</button>
+            <button type="button" class="chip chip--sm" data-prompt="Every day with you is my favourite. Happy anniversary.">Anniversary</button>
+            <button type="button" class="chip chip--sm" data-prompt="Get well soon. Sending sunshine and all my love.">Get well</button>
+          </div>
+
+          <button type="submit" class="btn btn--blush">Attach this card to my order</button>
+          <p class="composer__ok mono" data-composer-ok hidden>✓ Card attached. It'll be included when you send your order.</p>
+        </form>
+
+        <div class="composer__stage">
+          <div class="envelope" aria-hidden="true"><div class="envelope__flap"></div></div>
+          <article class="card-preview" data-card data-paper="blush" aria-live="polite">
+            <span class="card-preview__stamp">✿</span>
+            <p class="card-preview__to">Dear <span data-out="to">Wanjiru</span>,</p>
+            <p class="card-preview__msg" data-out="msg">Happy birthday, my love. Here's to another year of you.</p>
+            <p class="card-preview__from">— <span data-out="from">Brian</span></p>
+            <span class="card-preview__brand mono">Secret Stem · Nairobi</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="section events" id="events">
+      <header class="chapter">
+        <div>
+          <h2 class="chapter__title">Events, <em>dressed</em> in flowers</h2>
+          <p class="chapter__sub">We're event planners too. From an aisle of roses to a quiet tribute, we plan the flowers, deliver them and set them up on the day.</p>
+        </div>
+      </header>
+
+      <ol class="events__list">
+        <li class="event">
+          <div class="event__body">
+            <h3>Weddings &amp; ruracio</h3>
+            <p>Bridal bouquets, boutonnières, aisle and table pieces, car décor and arches, all in your colours.</p>
+          </div>
+          <span class="event__tag mono">Consultation free</span>
+        </li>
+        <li class="event">
+          <div class="event__body">
+            <h3>Tributes &amp; sympathy</h3>
+            <p>Casket sprays, wreaths and standing arrangements made with care. White lilies, roses and chrysanthemums with soft ribbon.</p>
+          </div>
+          <span class="event__tag mono">Same-day possible</span>
+        </li>
+        <li class="event">
+          <div class="event__body">
+            <h3>Corporate &amp; offices</h3>
+            <p>Reception pieces, launch-day centrepieces, client gifts and weekly desk flowers for CBD offices.</p>
+          </div>
+          <span class="event__tag mono">Weekly plans</span>
+        </li>
+        <li class="event">
+          <div class="event__body">
+            <h3>Birthdays &amp; surprises</h3>
+            <p>Box bouquets with chocolates, fruit baskets and balloons, delivered to the door, the office or the party.</p>
+          </div>
+          <span class="event__tag mono">Delivered in Nairobi</span>
+        </li>
+      </ol>
+
+      <div class="events__cta">
+        <p>Planning something? Tell us the date, the venue and the feeling you want, and we'll send back a mood board and a quote.</p>
+        <a class="btn btn--ink" target="_blank" rel="noopener" href="https://wa.me/254769367747?text=Hello%20Secret%20Stem%2C%20I%27m%20planning%20an%20event%20and%20would%20like%20a%20floral%20quote.%20Date%3A%20%20Venue%3A%20">Request an event quote</a>
+      </div>
+    </section>
+
+    <!-- ============ CARE ============ -->
+    <section class="section care" id="care">
+      <header class="chapter">
+        <div>
+          <h2 class="chapter__title">Keep them <em>fresh</em></h2>
+          <p class="chapter__sub">Look after them well and our mums and alstroemeria arrangements last up to 21 days.</p>
+        </div>
+      </header>
+
+      <div class="care__grid">
+        <div class="care__meter" aria-label="Typical vase life by flower">
+          <div class="meter"><span class="meter__label">Roses</span><span class="meter__bar" style="--d:7"></span><span class="meter__val mono">5–7 days</span></div>
+          <div class="meter"><span class="meter__label">Lilies</span><span class="meter__bar" style="--d:12"></span><span class="meter__val mono">10–14 days</span></div>
+          <div class="meter"><span class="meter__label">Alstroemeria</span><span class="meter__bar" style="--d:18"></span><span class="meter__val mono">up to 18 days</span></div>
+          <div class="meter"><span class="meter__label">Mums</span><span class="meter__bar" style="--d:21"></span><span class="meter__val mono">up to 21 days</span></div>
+        </div>
+
+        <ul class="care__steps">
+          <li><h3>Trim</h3><p>2 cm off each stem at an angle as soon as they arrive.</p></li>
+          <li><h3>Fresh water</h3><p>Every two days. Rinse the vase and keep leaves out of the water.</p></li>
+          <li><h3>Find a cool spot</h3><p>Away from direct sun, and away from the fruit bowl.</p></li>
+          <li><h3>Water bouquets</h3><p>They come with their own reservoir. Top it up and don't untie it.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <header class="chapter chapter--light">
+        <div>
+          <h2 class="chapter__title">Come <em>find</em> us</h2>
+          <p class="chapter__sub">Nairobi CBD, along Haile Selassie Avenue, near the Technical University of Kenya.</p>
+        </div>
+      </header>
+
+      <div class="visit__body">
+        <div class="arch arch--map">
+          <iframe title="Secret Stem location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Technical+University+of+Kenya,+Haile+Selassie+Avenue,+Nairobi&z=16&output=embed"></iframe>
+        </div>
+
+        <div class="visit__info">
+          <div class="hours">
+            <h3 class="mono">Opening hours <span class="status status--inline" data-status><i></i><b></b></span></h3>
+            <ul data-hours></ul>
+          </div>
+
+          <ul class="contact">
+            <li>
+              <span class="mono">Call / WhatsApp</span>
+              <a href="tel:+254769367747">+254 769 367 747</a>
+            </li>
+            <li>
+              <span class="mono">Email</span>
+              <a href="mailto:monicananjala47@gmail.com">monicananjala47@gmail.com</a>
+            </li>
+            <li>
+              <span class="mono">Find us as</span>
+              <span>Stemsecret254</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__big">Secret<em>Stem</em></p>
+    <div class="footer__row">
+      <p>For fresh, lovely flowers. Nairobi, Kenya.</p>
+      <p class="mono">© <span data-year></span> Stemsecret254</p>
+      <a href="#top" class="mono">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- mobile dock -->
+  <div class="dock">
+    <a href="https://wa.me/254769367747" target="_blank" rel="noopener" class="dock__wa">WhatsApp us</a>
+    <button data-open-bag class="dock__bag">Bag · <span data-bag-total>KES 0</span></button>
+  </div>
+
+  <!-- ============ BAG DRAWER ============ -->
+  <div class="scrim" data-scrim hidden></div>
+  <aside class="bag" data-bag aria-label="Your bag" aria-hidden="true" tabindex="-1">
+    <header class="bag__head">
+      <h2>Your <em>bag</em></h2>
+      <button class="bag__close" data-close-bag aria-label="Close bag">×</button>
+    </header>
+
+    <div class="bag__items" data-bag-items></div>
+
+    <div class="bag__empty" data-bag-empty>
+      <p class="custom__hand">Your bag is empty.</p>
+      <p>Add an arrangement from the collection to start your order.</p>
+    </div>
+
+    <form class="bag__form" data-checkout>
+      <div class="bag__card" data-bag-card hidden>
+        <span class="mono">Card attached</span>
+        <p data-bag-card-text></p>
+        <button type="button" class="link" data-remove-card>Remove</button>
+      </div>
+
+      <label class="field field--compact"><span class="mono">Your name</span><input name="name" required autocomplete="name"></label>
+      <label class="field field--compact"><span class="mono">Deliver to (area / building)</span><input name="where" placeholder="e.g. Kilimani, Yaya Centre" required></label>
+      <label class="field field--compact"><span class="mono">Delivery date</span><input name="when" type="date" required></label>
+
+      <div class="bag__total">
+        <span>Total</span>
+        <span><s data-bag-was></s> <b data-bag-sum>KES 0</b></span>
+      </div>
+      <p class="bag__save mono" data-bag-save></p>
+      <button class="btn btn--wa" type="submit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/></svg>
+        Send order on WhatsApp
+      </button>
+      <p class="bag__fine">We'll confirm availability, the delivery fee and payment (M-Pesa) in the chat.</p>
+    </form>
+  </aside>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
