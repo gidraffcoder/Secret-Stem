@@ -259,7 +259,7 @@ em { font-style: italic; }
 /* ---------- product grid ---------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(1.2rem, 2.4vw, 2rem);
 }
 .specimen {
@@ -561,11 +561,39 @@ em { font-style: italic; }
 /* =========================================================
    Responsive
    ========================================================= */
+/* Tablets keep the full desktop layout, just tightened. */
 @media (max-width: 1100px) {
   .topbar__actions .status { display: none; }
+  .nav { gap: 1.1rem; }
+  .hero { gap: 2rem; }
+  .hero__title { font-size: 6.6vw; }
+  .hero__cta { flex-wrap: nowrap; gap: .6rem; }
+  .hero__cta .btn { padding: .9em 1.2em; font-size: .88rem; white-space: nowrap; }
+  .grid { grid-template-columns: repeat(3, 1fr); }
+  .custom { grid-template-columns: 1fr auto; }
+  .custom__hand { grid-column: 1 / -1; }
+  .note { right: -12px; width: 190px; }
+  .note p { font-size: 1.15rem; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 760px) {
+  .brand__word { font-size: 1.2rem; }
+  .nav { gap: .8rem; }
+  .nav a { font-size: .85rem; }
+  .composer__body { gap: 1.5rem; }
+  .card-preview { padding: 1.3rem 1.4rem 1rem; }
+  .card-preview__to { font-size: 1.3rem; }
+  .card-preview__msg { font-size: 1.15rem; }
+  .card-preview__from { font-size: 1.2rem; }
+  .care__steps li { padding: 1rem 1.1rem 1.1rem; }
+  .care__steps h3 { font-size: 1.1rem; }
+  .care__steps p { font-size: .88rem; }
+  .meter { grid-template-columns: 1fr auto; gap: .4rem 1rem; }
+  .meter__bar { grid-column: 1 / -1; order: 3; }
+}
+
+/* Phones: same desktop structure, sized to stay readable. */
+@media (max-width: 640px) {
   .menu-btn { display: block; }
   .nav {
     position: fixed; inset: 70px 0 auto 0; z-index: 49;
@@ -579,36 +607,71 @@ em { font-style: italic; }
   .nav a { font-family: var(--f-display); font-size: 1.8rem; padding: .6rem 0; border-bottom: 1px solid var(--line); }
   .nav a::after { display: none; }
 
-  .hero { grid-template-columns: 1fr; }
-  .hero__art { width: min(100%, 400px); margin-top: 1rem; }
-  .composer__body, .care__grid, .visit__body { grid-template-columns: 1fr; }
-  .composer__stage { min-height: 380px; order: -1; }
-  .custom { grid-template-columns: 1fr; }
-  .arch--map { aspect-ratio: 4 / 5; }
-}
-
-@media (max-width: 640px) {
   body { font-size: 16px; padding-bottom: 72px; }
-  .brand__word { font-size: 1.2rem; }
   .bag-btn { display: none; }
-  .hero__facts { flex-wrap: wrap; gap: 1rem 1.6rem; }
-  .hero__cta .btn { flex: 1 1 100%; }
-  .seal { width: 110px; height: 110px; left: -8px; bottom: 30px; }
-  .seal__wax { width: 54px; height: 54px; font-size: 1.4rem; }
-  .note { right: -4px; top: 18px; width: 170px; padding: .9rem .9rem .6rem; }
-  .note p { font-size: 1.1rem; }
-  .arch--hero { outline-offset: 6px; }
+
+  /* hero: title and photo side by side, as on desktop */
+  .hero { grid-template-columns: 1.15fr .85fr; gap: 1rem 1.1rem; align-items: center; padding-top: 1.5rem; }
+  .hero__text { display: contents; }
+  .eyebrow { grid-column: 1 / -1; margin-bottom: .2rem; }
+  .eyebrow::before { width: 20px; }
+  .hero__title { grid-column: 1; grid-row: 2; font-size: 9.4vw; margin: 0; }
+  .hero__art { grid-column: 2; grid-row: 2; width: 100%; }
+  .hero__lede, .hero__cta, .hero__facts { grid-column: 1 / -1; }
+  .hero__lede { margin: .6rem 0 0; font-size: 1rem; }
+  .hero__cta { margin-bottom: .6rem; }
+  .hero__cta .btn { flex: 1 1 0; padding: .9em .6em; font-size: .8rem; gap: .4em; }
+  .hero__facts { gap: 1rem; justify-content: space-between; padding-top: 1.1rem; }
+  .hero__facts dd { font-size: 1.05rem; }
+  .arch--hero { outline-offset: 5px; }
+  .seal { width: 64px; height: 64px; left: -18px; bottom: 14px; }
+  .seal__ring { display: none; }
+  .seal__wax { width: 44px; height: 44px; font-size: 1.1rem; }
+  .note { display: none; }
+
+  /* collection: two columns */
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 0 calc(var(--gutter) * -1) 1.6rem; padding: 0 var(--gutter) .3rem; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { white-space: nowrap; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .specimen { padding: 7px 7px 12px; border-radius: 14px; }
+  .specimen:hover { transform: none; box-shadow: none; }
+  .specimen__save { top: 12px; right: 12px; font-size: .9rem; }
+  .specimen__body { padding: .7rem .2rem 0; }
+  .specimen__latin { font-size: .72rem; }
+  .specimen__name { font-size: 1.02rem; }
+  .specimen__desc { font-size: .8rem; line-height: 1.45; margin-bottom: .7rem; }
+  .specimen__foot { flex-direction: column; align-items: stretch; gap: .55rem; padding-top: .7rem; }
+  .price { flex-direction: row; align-items: baseline; gap: .4rem; flex-wrap: wrap; }
+  .price b { font-size: 1.1rem; }
+  .price s { font-size: .72rem; }
+  .add { justify-content: center; padding: .6em; }
+  .custom { grid-template-columns: 1fr; }
+
+  /* card writer: card above the form */
+  .composer__body { grid-template-columns: 1fr; }
+  .composer__stage { min-height: 300px; order: -1; }
+  .card-preview { transform: rotate(2deg) translateY(-30px); }
+  .composer__stage:hover .card-preview { transform: rotate(2deg) translateY(-30px); }
+  .composer .btn { justify-self: stretch; }
+
+  /* events: tag sits under each title */
   .event { grid-template-columns: 1fr; gap: .5rem; }
-  .care__steps { grid-template-columns: 1fr; }
   .event__tag { justify-self: start; }
   .event:hover { padding-left: 0; padding-right: 0; }
   .event:hover::before { transform: scaleY(0); }
-  .meter { grid-template-columns: 1fr auto; }
-  .meter__bar { grid-column: 1 / -1; order: 3; }
-  .composer__stage { min-height: 320px; }
-  .card-preview { padding: 1.3rem 1.4rem 1rem; transform: rotate(2deg) translateY(-30px); }
-  .composer__stage:hover .card-preview { transform: rotate(2deg) translateY(-30px); }
-  .composer .btn { justify-self: stretch; }
+
+  /* care: bars on top, tips stay a 2x2 grid */
+  .care__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .care__steps { gap: 10px; }
+  .care__steps li { padding: .9rem .9rem 1rem; }
+  .care__steps h3 { font-size: 1rem; }
+  .care__steps p { font-size: .82rem; }
+
+  /* visit: map then details */
+  .visit__body { grid-template-columns: 1fr; }
+  .arch--map { aspect-ratio: 4 / 5; }
+
   .toast { bottom: 86px; }
 
   .dock {
